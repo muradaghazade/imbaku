@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM Baku</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!--- End favicon-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/icomoon-font.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/app.min.css" />
+
+  <style>
+
+
+@font-face {
+    font-family: simpleFont;
+    src: url('./assets/custom-fonts/NeueHaasDisplayBlack.woff2');
+  }
+
+  @font-face {
+    font-family: lightFont;
+    src: url('./assets/custom-fonts/NeueHaasDisplayLight.woff2');
+  }
+
+  @font-face {
+    font-family: thinFont;
+    src: url('./assets/custom-fonts/NeueHaasDisplayThinItalic.woff2');
+  }
+
+  body {
+    font-family: simpleFont;
+  }
+
+  .change-font-simple {
+    font-family: simpleFont !important;
+  }
+
+  .change-font-light {
+    font-family: lightFont !important;
+  }
+
+    button.button {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: white;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #AC57FF, #FFAD46, #FF2A45);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #02001C inset;
+}
+
+button.button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+
+
+@media (max-width: 360px) {
+
+  .client-new {
+    flex-direction: column;
+}
+
+}
+
+@media (min-width: 361px)and (max-width: 769px) {
+
+  .client-new {
+    flex-direction: column;
+}
+
+}
+@media (min-width: 768px) and (max-width: 841px) {
+  .client-new {
+    flex-direction: column;
+}
+
+}
+
+  </style>
+</head>
+
+<body class="light">
+
+
+
+  <header class="site-header site-header--menu-right fugu--header-section fugu--header-three" id="sticky-menu" style="background-color: #02001C;">
+    <div class="container-fluid">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="./assets/images/custom/İMBAKU_h1_logo.svg" style="width: 200px !important;" alt="" class="">
+          </a>
+        </div>
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item nav-item-has-children">
+                <a href="about.html" class="nav-link-item drop-trigger">About us </a>
+                
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#speakers" class="nav-link-item drop-trigger">Speakers </a>
+                
+              </li>
+              <li class="nav-item nav-item-has-children has-megamenu">
+                <a href="sponsors.html" class="nav-link-item drop-trigger">Sponsors </a>
+                
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#agenda" class="nav-link-item drop-trigger">Agenda </a>
+                
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#startups" class="nav-link-item drop-trigger">Startups</a>
+                
+              </li>
+
+              <li class="header-btn header-btn-l1 fugu-responsive-btn">
+                <button class="button fugu--menu-btn1" href="contact.html">
+                  Get tickets
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+          <button class="button fugu--menu-btn1" href="contact.html">
+            Get tickets
+          </button>
+        </div>
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+      </nav>
+    </div>
+  </header>
+  <!--End landex-header-section -->
+
+
+  <div class="fugu--hero-section" style="background-color: #02001C; z-index: auto;">
+    <div id="fugu--counter"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="fugu--hero-content">
+            <h1 class="wow fadeInUpX change-font-simple" data-wow-delay="0s">International
+              MeetUp 2023</h1>
+            <p class="wow fadeInUpX change-font-light" data-wow-delay="0.10s">We open new possibilities for your ideas</p>
+            <p class="wow fadeInUpX change-font-light" data-wow-delay="0.10s">International Meetup creates a platform where unicorns, global experts, startups and corporations meet to create a new stage in the development of Azerbaijan's startup ecosystem</p>
+
+            <div class="fugu--btn-wrap fugu--hero-btn wow fadeInUpX" data-wow-delay="0.20s">
+              <button class="button" href="#" style="text-transform: uppercase;">may 18, 2023</button>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="fugu--hero-right" id="rotateOne">
+            <div class="" style="display: flex;">
+              
+              <img src="./assets/images/custom/ticket2.svg" width="350px" style="margin-top: -60px;" alt="">
+              <a href="" class="change-font-simple" style="margin-left: -287px;
+              margin-top: 156px;
+              rotate: 8deg;
+              font-size: 16px;
+              color: white;">Get tickets</a>
+               <a href="" class="change-font-simple" style="margin-left: -87px;
+               margin-top: 214px;
+               rotate: 7deg;
+               font-size: 16px;
+               color: white;">Get sitting tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End fugu-hero-section -->
+
+  <div class="fugu-client-section" style="background-color: #02001C; padding: 45px;">
+    <div class="container row">
+      <div class="col-md-4">
+        <div class="">
+          <h5 class="change-font-simple" style="color: white;">Organizer: </h5>
+        </div>
+        <div class="fugu-client-sliderr">
+          <div class="fugu-brand-logo">
+            <img src="./assets/images/custom/grind.svg" width="250" style="margin-top: 20px;" alt="">
+          </div>
+          
+        </div>
+      </div>
+      
+
+      <div class="col-md-8">
+        <div class="">
+          <h5 class="change-font-simple" style="color: white;">Sponsors: </h5>
+        </div>
+        <div class="d-flex client-new">
+          <div class="fugu-brand-logo" style="margin-right: 50px;">
+            <img src="assets/images/custom/pasha.svg" width="300" alt="">
+          </div>
+          <div class="fugu-brand-logo">
+            <img src="assets/images/custom/idda.svg" width="200" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End slider section -->
+
+  <div class="fugu--portfolio-section" style="background-color: #02001C; padding-top: 80px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="">
+        <div class="">
+          <h2 style="color: white;" class="change-font-simple">Speakers</h2>
+          <!-- <p>NFTs are usually associated with non-physical art but in reality, there are several different types of NFTs and are explained in this guide.</p> -->
+        </div>
+      </div>
+
+      <!-- <div class="fugu--portfolio-menu">
+        <ul class="option-set clear-both" data-option-key="filter">
+          <li class="active" data-option-value="*">
+            <span><img src="assets/images/all-img/v3/m-icon1.png" alt=""> Artworks</span>
+          </li>
+          <li class="" data-option-value=".video">
+            <span> <img src="assets/images/all-img/v3/m-icon2.png" alt="">Video-Game</span>
+          </li>
+          <li class="" data-option-value=".virtual">
+            <span><img src="assets/images/all-img/v3/m-icon3.png" alt=""> Virtual Land</span>
+          </li>
+          <li class="" data-option-value=".domain">
+            <span><img src="assets/images/all-img/v3/m-icon4.png" alt=""> Domain Names</span>
+          </li>
+          <li class="" data-option-value=".music">
+            <span><img src="assets/images/all-img/v3/m-icon5.png" alt="">Music</span>
+          </li>
+          <li class="" data-option-value=".sports">
+            <span><img src="assets/images/all-img/v3/m-icon6.png" alt="">Sports</span>
+          </li>
+        </ul>
+      </div> -->
+      <div id="speakers"></div>
+      <div class="fugu--portfolio-wrap" id="fugu--four-column">
+        <div class="collection-grid-item sports domain">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item video marketing">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="collection-grid-item marketing virtual video">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="collection-grid-item music marketing">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="collection-grid-item virtual">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="collection-grid-item video music">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="collection-grid-item virtual marketing">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="collection-grid-item marketing music">
+          <div class="fugu--card-wrap">
+            <div class="fugu--card-thumb">
+              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+            </div>
+            <div class="fugu--card-data">
+              <h3 class="change-font-simple">Rashad Nabiyev</h3>
+              <p class="change-font-light">Minister of Digital Development
+                and Transport of the
+                Republic of Azerbaijan</p>
+              <div class="fugu--card-footer">
+                <div class="fugu--card-footer-data">
+                 
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
+                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--- End container -->
+  </div>
+  </div>
+
+  <!-- End portfolio section -->
+
+  <div class="fugu--text-slider-section">
+    <div class="fugu--text-slider">
+      <div class="fugu--text-slider-data">
+        <div class="fugu--text-slider-icon">
+          <img src="assets/images/all-img/v3/daimond.png" alt="">
+        </div>
+        <h3>We open new possibilities for your ideas</h3>
+      </div>
+      <div class="fugu--text-slider-data">
+        <div class="fugu--text-slider-icon">
+          <img src="assets/images/all-img/v3/daimond.png" alt="">
+        </div>
+        <h3>We open new possibilities for your ideas</h3>
+      </div>
+      <div class="fugu--text-slider-data">
+        <div class="fugu--text-slider-icon">
+          <img src="assets/images/all-img/v3/daimond.png" alt="">
+        </div>
+        <h3>We open new possibilities for your ideas</h3>
+      </div>
+
+    </div>
+  </div>
+
+<div id="agenda"></div>
+  <div class="fugu--faq-section dark-version fugu--section-padding" style="background-color: #02001C;">
+    <div class="container">
+      <div class="">
+        <div class="">
+          <h2 class="change-font-simple" style="text-transform: uppercase; color: white;">Agenda</h2>
+        </div>
+
+      </div>
+      <div class="fugu--accordion-one accordion-four" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button change-font-simple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End nexto text slider section -->
+
+  <!-- <div class="fugu--team-section fugu--section-padding2">
+    <div class="container">
+      <div class="fugu--section-title-wrap">
+        <div class="fugu--section-title">
+          <div class="fugu--default-content content-sm">
+            <h2>Meet our dynamic team</h2>
+            <p>Collectors who value these relationships will look for NFTs with unique narratives and creation processes.</p>
+          </div>
+        </div>
+        <div class="fugu--section-button">
+          <div class="fugu--portfolio-btn">
+            <a class="fugu--outline-btn" href=""><span>View All Members</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team1.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Jane Cooper</h4>
+                <p>CEO & Founder</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0.10s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team2.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Esther Howard</h4>
+                <p>Art Director</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0.20s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team3.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Cameron Williamson</h4>
+                <p>Marketing Officer</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0.30s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team4.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Brooklyn Simmons</h4>
+                <p>Operating Officer</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0.40s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team5.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Leslie Alexander</h4>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0.50s">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/all-img/v3/team6.jpg" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4>Guy Hawkins</h4>
+                <p>UI/UX Designer</p>
+              </div>
+            </div>
+            <button type="button" class="fugu--dot-btn"> <img src="assets/images/svg2/dots.svg" alt=""> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fugu--shape3">
+      <img src="assets/images/shape2/shape3.png" alt="">
+    </div>
+  </div> -->
+  <!-- End team section -->
+
+  <!-- <div class="fugu--roadmap-section">
+    <div class="container">
+      <div class="fugu--section-title">
+        <div class="fugu--default-content content-sm">
+          <h2>Create and sell your NFTs</h2>
+          <p>Anyone can make a profile on Foundation but only selected creators can mint NFTs & published a complete guide.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <div class="fugu--iconbox-wrap wow fadeInUpX" data-wow-delay="0s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/v3/roadmap-icon1.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Set up your wallet</h4>
+              <p>Once you've set up your wallet of choice, connect it by clicking the wallet icon easily.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fugu--iconbox-wrap wow fadeInUpX" data-wow-delay="0.10s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/v3/roadmap-icon2.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Create collection</h4>
+              <p>Click my collections and set up your collection. Add social links a description and others.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fugu--iconbox-wrap wow fadeInUpX" data-wow-delay="0.20s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/v3/roadmap-icon3.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>Add your NFT</h4>
+              <p>Upload your work (Image, art, video, audio, or 3D art) add a title and description.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fugu--iconbox-wrap wow fadeInUpX" data-wow-delay="0.30s">
+            <div class="fugu--iconbox-thumb">
+              <img src="assets/images/all-img/v3/roadmap-icon4.png" alt="">
+            </div>
+            <div class="fugu--iconbox-data">
+              <h4>List them for sale</h4>
+              <p>Choose between action, fixed-price listings & pricing listings. We help you sell them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- End roadmap section -->
+
+  <!-- <div class="fugu--newslatter-section">
+    <div class="container">
+      <div class="fugu--newslatter-wrap">
+        <div class="fugu--section-title">
+          <div class="fugu--default-content content-sm">
+            <h2>Subscribe to get the latest news updates about NFTS</h2>
+            <p>Get regular updates about interesting & secret upcoming NFT projects & events that are coming exclusively on our site.</p>
+          </div>
+        </div>
+        <div class="fugu--newsletter">
+          <input type="email" placeholder="Type your email here">
+          <button type="submit" id="fugu--submit-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="fugu--shape4">
+      <img src="assets/images/shape2/shape4.png" alt="">
+    </div>
+  </div> -->
+  <!-- End newslatter section -->
+
+  <div class="fugu-go-top">
+    <img src="assets/images/svg/arrow-black-right.svg" alt="">
+  </div>
+
+
+
+  <!-- Footer  -->
+
+  <footer class="fugu--footer-section" style="background-color: #010012;">
+    <div class="container">
+      <div class="fugu--footer-top">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="fugu--textarea">
+              <div class="fugu--footer-logo">
+                <img src="./assets/images/custom/İMBAKU_h_logo_white.svg" alt="" class="light-version-logo">
+              </div>
+              <!-- <p>Discover NFTs by category, track the latest drops, and follow the collections you love to enjoy it!</p> -->
+              <div class="fugu--social-icon">
+                <ul>
+                  <li><a href=""><img src="assets/images/social2/twitter.svg" alt=""></a></li>
+                  <li><a href=""><img src="assets/images/social2/facebook.svg" alt=""></a></li>
+                  <li><a href=""><img src="assets/images/social2/instagram.svg" alt=""></a></li>
+                  <li><a href=""><img src="assets/images/social2/github.svg" alt=""></a></li>
+
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <div class="" style="text-align: end; margin-top: 15px;">
+              <span style="color: #9D9D9D;">Email:</span>
+              <p style="color: #9D9D9D;">zaur@startupgrind.com</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <div class="" style="text-align: end; margin-top: 15px;">
+              <span style="color: #9D9D9D;">Phone:</span>
+              <p style="color: #9D9D9D;">+994 99 747 76 66</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="" style="text-align: end; margin-top: 15px;">
+              <span style="color: #9D9D9D;">Address:</span>
+              <p style="color: #9D9D9D;">Azerbaijan, Baku, Khatai district, Cavanshir 15, 88</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fugu--footer-bottom">
+        <p>&copy; Copyright 2023, All Rights Reserved by Startup Grind Baku </p>
+        
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="fugu-preloader">
+    <div class="fugu-spinner">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" />
+      </svg>
+    </div>
+    <div class="fugu-title">loading...</div>
+  </div>
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
