@@ -32,7 +32,7 @@
 
     @font-face {
         font-family: simpleFont;
-        src: url('./assets/custom-fonts/NeueHaasDisplayBlack.woff2');
+        src: url('./assets/custom-fonts/NeueHaasDisplayBold.woff2');
       }
     
       @font-face {
@@ -55,6 +55,7 @@
     
       .change-font-light {
         font-family: lightFont !important;
+        letter-spacing: 1px !important;
       }
     
         button.button {
@@ -75,59 +76,31 @@
       box-shadow: none;
       color: white;
     }
-
-    .fugu--newslatter-wrap1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    transition: all .4s;
-    border-radius: inherit;
-    background: #AC57FF;
-}
-.fugu--newslatter-wrap2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    transition: all .4s;
-    border-radius: inherit;
-    background: #FFC045;
-}
-.fugu--newslatter-wrap3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    transition: all .4s;
-    border-radius: inherit;
-    background: #C4C2FF;
-}
-.fugu--newslatter-wrap4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    transition: all .4s;
-    border-radius: inherit;
-    background: #B96536;
-}
+    
+    
+    
+    @media (max-width: 360px) {
+    
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    
+    @media (min-width: 361px)and (max-width: 769px) {
+    
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    @media (min-width: 768px) and (max-width: 841px) {
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    
       </style>
 </head>
 

@@ -32,7 +32,7 @@
 
     @font-face {
         font-family: simpleFont;
-        src: url('./assets/custom-fonts/NeueHaasDisplayBlack.woff2');
+        src: url('./assets/custom-fonts/NeueHaasDisplayBold.woff2');
       }
     
       @font-face {
@@ -55,6 +55,7 @@
     
       .change-font-light {
         font-family: lightFont !important;
+        letter-spacing: 1px !important;
       }
     
         button.button {
@@ -75,6 +76,31 @@
       box-shadow: none;
       color: white;
     }
+    
+    
+    
+    @media (max-width: 360px) {
+    
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    
+    @media (min-width: 361px)and (max-width: 769px) {
+    
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    @media (min-width: 768px) and (max-width: 841px) {
+      .client-new {
+        flex-direction: column;
+    }
+    
+    }
+    
       </style>
 </head>
 
