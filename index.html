@@ -85,6 +85,18 @@ button.button:hover {
   .client-new {
     flex-direction: column;
 }
+  .mobile-ticket {
+    display: block !important;
+  }
+  .ticket-desktop {
+    display: none !important;
+  }
+  .fugu-client-section {
+    padding: 10px !important;
+  }
+  .mobile-margin {
+    margin-top: 50px;
+  }
 
 }
 
@@ -93,12 +105,36 @@ button.button:hover {
   .client-new {
     flex-direction: column;
 }
+  .mobile-ticket {
+    display: block !important;
+  }
+  .ticket-desktop {
+    display: none !important;
+  }
+  .fugu-client-section {
+    padding: 10px !important;
+  }
+  .mobile-margin {
+    margin-top: 50px;
+  }
 
 }
 @media (min-width: 768px) and (max-width: 841px) {
   .client-new {
     flex-direction: column;
 }
+  .mobile-ticket {
+    display: block !important;
+  }
+  .ticket-desktop {
+    display: none !important;
+  }
+  .fugu-client-section {
+    padding: 10px !important;
+  }
+  .mobile-margin {
+    margin-top: 50px;
+  }
 
 }
 
@@ -173,11 +209,30 @@ button.button:hover {
   </header>
   <!--End landex-header-section -->
 
+  
 
   <div class="fugu--hero-section" style="background-color: #02001C; z-index: auto;">
     <div id="fugu--counter"></div>
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <div class="fugu--hero-right mobile-ticket" style="display: none;">
+            <div class="" style="display: flex;">
+              
+              <img src="./assets/images/custom/ticket2.svg" width="350px" style="margin-top: -60px;" alt="">
+              <a href="" class="change-font-simple" style="margin-left: -287px;
+              margin-top: 156px;
+              rotate: 8deg;
+              font-size: 16px;
+              color: white;">Get tickets</a>
+               <a href="" class="change-font-simple" style="margin-left: -87px;
+               margin-top: 214px;
+               rotate: 7deg;
+               font-size: 16px;
+               color: white;">Get sitting tickets</a>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-7">
           <div class="fugu--hero-content">
             <h1 class="wow fadeInUpX change-font-simple" data-wow-delay="0s">International
@@ -191,7 +246,7 @@ button.button:hover {
             
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 ticket-desktop">
           <div class="fugu--hero-right" id="rotateOne">
             <div class="" style="display: flex;">
               
@@ -230,7 +285,7 @@ button.button:hover {
       </div>
       
 
-      <div class="col-md-8">
+      <div class="col-md-8 mobile-margin">
         <div class="">
           <h5 class="change-font-simple" style="color: white;">Sponsors: </h5>
         </div>
