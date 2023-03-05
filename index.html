@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IM Baku</title>
 
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/custom/fav.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/custom/fav.png" type="image/x-icon">
   <!--- End favicon-->
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -76,6 +76,25 @@
 button.button:hover {
   box-shadow: none;
   color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #201c2c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
@@ -182,7 +201,7 @@ button.button:hover {
                 
               </li>
               <li class="nav-item nav-item-has-children">
-                <a href="#startups" class="nav-link-item drop-trigger">Startups</a>
+                <a href="startups.html" class="nav-link-item drop-trigger">Startups</a>
                 
               </li>
 
@@ -195,9 +214,16 @@ button.button:hover {
           </nav>
         </div>
         <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-          <button class="button fugu--menu-btn1" href="contact.html">
-            Get tickets
-          </button>
+          <div class="dropdown">
+            <button class="button fugu--menu-btn1" href="contact.html">
+              Get tickets
+            </button>
+            <div class="dropdown-content">
+            <a href="https://form.jotform.com/230622938209457" style="font-size: 14px; color: white;">Networking tickets</a>
+            <a href="https://form.jotform.com/230614292158454" style="font-size: 14px; color: white;">Seating tickets</a>
+            </div>
+          </div>
+          
         </div>
         <!-- mobile menu trigger -->
         <div class="mobile-menu-trigger">
@@ -220,12 +246,12 @@ button.button:hover {
             <div class="" style="display: flex;">
               
               <img src="./assets/images/custom/ticket2.svg" width="350px" style="margin-top: -60px;" alt="">
-              <a href="" class="change-font-simple" style="margin-left: -287px;
+              <a href="https://form.jotform.com/230622938209457" class="change-font-simple" style="margin-left: -287px;
               margin-top: 156px;
               rotate: 8deg;
               font-size: 16px;
               color: white;">Get tickets</a>
-               <a href="" class="change-font-simple" style="margin-left: -87px;
+               <a href="https://form.jotform.com/230614292158454" class="change-font-simple" style="margin-left: -87px;
                margin-top: 214px;
                rotate: 7deg;
                font-size: 16px;
@@ -251,12 +277,12 @@ button.button:hover {
             <div class="" style="display: flex;">
               
               <img src="./assets/images/custom/ticket2.svg" width="350px" style="margin-top: -60px;" alt="">
-              <a href="" class="change-font-simple" style="margin-left: -287px;
+              <a href="https://form.jotform.com/230622938209457" class="change-font-simple" style="margin-left: -287px;
               margin-top: 156px;
               rotate: 8deg;
               font-size: 16px;
               color: white;">Get tickets</a>
-               <a href="" class="change-font-simple" style="margin-left: -87px;
+               <a href="https://form.jotform.com/230614292158454" class="change-font-simple" style="margin-left: -87px;
                margin-top: 214px;
                rotate: 7deg;
                font-size: 16px;
@@ -338,20 +364,18 @@ button.button:hover {
         <div class="collection-grid-item sports domain">
           <div class="fugu--card-wrap">
             <div class="fugu--card-thumb">
-              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+              <img src="assets/images/custom/zaur.png" alt="">
             </div>
             <div class="fugu--card-data">
-              <h3 class="change-font-simple">Rashad Nabiyev</h3>
-              <p class="change-font-light">Minister of Digital Development
-                and Transport of the
-                Republic of Azerbaijan</p>
+              <h3 class="change-font-simple">Zaur Unsizadeh</h3>
+              <p class="change-font-light">Startup Grind Baku</p>
               <div class="fugu--card-footer">
                 <div class="fugu--card-footer-data">
                  
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+                  <a href="https://www.facebook.com/unsizadez "><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt=""></a>
+                  <a href="https://www.linkedin.com/in/zaur-john-unsizadeh-b77037153/"><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                  <a href="https://www.instagram.com/unsi_zade/?hl=en"><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                  <a href="https://twitter.com/iunsizade"><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -359,20 +383,18 @@ button.button:hover {
         <div class="collection-grid-item video marketing">
           <div class="fugu--card-wrap">
             <div class="fugu--card-thumb">
-              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+              <img src="assets/images/custom/mosalah.png" alt="">
             </div>
             <div class="fugu--card-data">
-              <h3 class="change-font-simple">Rashad Nabiyev</h3>
-              <p class="change-font-light">Minister of Digital Development
-                and Transport of the
-                Republic of Azerbaijan</p>
+              <h3 class="change-font-simple">Mo Salah</h3>
+              <p class="change-font-light">Brinc</p>
               <div class="fugu--card-footer">
                 <div class="fugu--card-footer-data">
                  
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt=""> -->
+                  <a href="https://www.linkedin.com/in/thisismosalah/ "><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt=""> -->
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt=""> -->
               </div>
             </div>
           </div>
@@ -381,20 +403,18 @@ button.button:hover {
         <div class="collection-grid-item marketing virtual video">
           <div class="fugu--card-wrap">
             <div class="fugu--card-thumb">
-              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+              <img src="assets/images/custom/sebastien.png" alt="">
             </div>
             <div class="fugu--card-data">
-              <h3 class="change-font-simple">Rashad Nabiyev</h3>
-              <p class="change-font-light">Minister of Digital Development
-                and Transport of the
-                Republic of Azerbaijan</p>
+              <h3 class="change-font-simple">Sebastien Toupy</h3>
+              <p class="change-font-light">Uniborn</p>
               <div class="fugu--card-footer">
                 <div class="fugu--card-footer-data">
                  
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt=""> -->
+                  <a href="https://www.linkedin.com/in/sebastientoupy/"><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt=""> -->
+                  <a href="https://twitter.com/sebatoupy "><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -403,26 +423,24 @@ button.button:hover {
         <div class="collection-grid-item music marketing">
           <div class="fugu--card-wrap">
             <div class="fugu--card-thumb">
-              <img src="assets/images/all-img/v3/card5.jpg" alt="">
+              <img src="assets/images/custom/rasad.png" alt="">
             </div>
             <div class="fugu--card-data">
-              <h3 class="change-font-simple">Rashad Nabiyev</h3>
-              <p class="change-font-light">Minister of Digital Development
-                and Transport of the
-                Republic of Azerbaijan</p>
+              <h3 class="change-font-simple">Agahuseyn Ahmadov </h3>
+              <p class="change-font-light">500 Global</p>
               <div class="fugu--card-footer">
                 <div class="fugu--card-footer-data">
                  
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt="">
-                  <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt="">
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test.svg" alt=""> -->
+                  <a href="https://www.linkedin.com/in/agahuseyn/"><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                  <!-- <img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test2.svg" alt=""> -->
+                  <a href="https://twitter.com/Agahuseyn "><img style="width: 20px; margin-right: 15px;" src="./assets/images/custom/test3.svg" alt=""></a>
               </div>
             </div>
           </div>
           </div>
         </div>
-        <div class="collection-grid-item virtual">
+        <!-- <div class="collection-grid-item virtual">
           <div class="fugu--card-wrap">
             <div class="fugu--card-thumb">
               <img src="assets/images/all-img/v3/card5.jpg" alt="">
@@ -509,7 +527,7 @@ button.button:hover {
             </div>
           </div>
         </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!--- End container -->
@@ -555,63 +573,147 @@ button.button:hover {
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button change-font-simple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+              08:30 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+              Welcome drinks and sweets
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+              09:30 - 10:00 <p style="margin-left: 70px;" class="change-font-simple">Opening</p>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+              Speech by the organizers, guests of honor and sponsors of the event
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+              10:00 - 10:45 <p style="margin-left: 74px;" class="change-font-simple">Unicorn-speech </p>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+              Speech by the founder of a unicorn startup
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+              10:45 - 11:15 <p style="margin-left: 85px;" class="change-font-simple">Coffee-break</p>
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+              Networking and matchmaking
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              09:00 - 09:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+              11:15 - 12:30 <p style="margin-left: 85px;" class="change-font-simple">Panel Session </p>
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+              What will happen to venture capital investments this year?
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              12:35 - 13:20 <p style="margin-left: 75px;" class="change-font-simple">Keynote Speech </p>
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Presentation by an expert on a hot topic
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              13:20 - 14:00 <p style="margin-left: 70px;" class="change-font-simple">Coffee-break</p>
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Networking and matchmaking
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              14:00 - 14:45 <p style="margin-left: 70px;" class="change-font-simple">Unicorn-speech </p>
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Speech by the founder of a unicorn startup
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              14:50 - 16:30 <p style="margin-left: 70px;" class="change-font-simple">Startup Battle</p>
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Performance of 30 startups for 3 minutes
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              16:30 - 17:15 <p style="margin-left: 75px;" class="change-font-simple">Unicorn-speech </p>
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Speech by the founder of a unicorn startup
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              17:15 - 17:45 <p style="margin-left: 75px;" class="change-font-simple">Final</p>
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Awarding the winners of the startup battle and closing the event.
+            </div>
+          </div>
+        </div>
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTvelve">
+            <button class="accordion-button change-font-simple collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTvelve" aria-expanded="false" aria-controls="collapseTvelve">
+              18:00 - 20:30 <p style="margin-left: 70px;" class="change-font-simple">Registration</p>
+            </button>
+          </h2>
+          <div id="collapseTvelve" class="accordion-collapse collapse" aria-labelledby="headingTvelve" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              At the most basic level, a non-fungible token is a one-of-a-kind, verifiable digital asset that can be exchanged between a creator & a buyer. NFTs can represent real-world items like artwork and real estate. These real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud. NFTs can also function to represent individuals' identities, property rights, and more.
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>

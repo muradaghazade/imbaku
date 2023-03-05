@@ -77,7 +77,24 @@
       color: white;
     }
     
-    
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #201c2c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
     
     @media (max-width: 360px) {
     
@@ -141,11 +158,11 @@
                 
               </li>
               <li class="nav-item nav-item-has-children">
-                <a href="index.html##agenda" class="nav-link-item drop-trigger">Agenda </a>
+                <a href="index.html#agenda" class="nav-link-item drop-trigger">Agenda </a>
                 
               </li>
               <li class="nav-item nav-item-has-children">
-                <a href="index.html##startups" class="nav-link-item drop-trigger">Startups</a>
+                <a href="startups.html" class="nav-link-item drop-trigger">Startups</a>
                 
               </li>
 
@@ -158,9 +175,16 @@
           </nav>
         </div>
         <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-          <button class="button fugu--menu-btn1" href="contact.html">
-            Get tickets
-          </button>
+          <div class="dropdown">
+            <button class="button fugu--menu-btn1" href="contact.html">
+              Get tickets
+            </button>
+            <div class="dropdown-content">
+            <a href="https://form.jotform.com/230622938209457" style="font-size: 14px; color: white;">Networking tickets</a>
+            <a href="https://form.jotform.com/230614292158454" style="font-size: 14px; color: white;">Seating tickets</a>
+            </div>
+          </div>
+          
         </div>
         <!-- mobile menu trigger -->
         <div class="mobile-menu-trigger">
@@ -412,6 +436,9 @@
             <img src="./assets/images/custom/agile.svg" alt="">
           </div>
           <div class="col-md-3" style="margin-bottom: 50px;">
+            <img src="./assets/images/custom/pasha.svg" alt="">
+          </div>
+          <div class="col-md-3" style="margin-bottom: 50px;">
             <img src="./assets/images/custom/davam.svg" alt="">
           </div>
           <div class="col-md-3" style="margin-bottom: 50px;">
@@ -433,10 +460,7 @@
             <img src="./assets/images/custom/enactus.svg" alt="">
           </div>
           <div class="col-md-3" style="margin-bottom: 50px;" >
-            <img src="./assets/images/custom/enactus.svg" alt="">
-          </div>
-          <div class="col-md-3" style="margin-bottom: 50px;" >
-            <img src="./assets/images/custom/enactus.svg" alt="">
+            <img src="./assets/images/custom/growlab.svg" alt="">
           </div>
         </div>
       </div>
@@ -459,119 +483,119 @@
           <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay="0s">
             <div class="fugu--team-left">
               <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team1.jpg" alt="">
+                <img src="assets/images/custom/zaur.png" alt="">
               </div>
               <div class="fugu--team-data">
-                <h4 class="change-font-simple">Jane Cooper</h4>
-                <p class="change-font-light">CEO & Founder</p>
+                <h4 class="change-font-simple">Zaur Unsizade</h4>
+                <p class="change-font-light">Chapter Director</p>
               </div>
             </div>
             <div style="display: flex;flex-direction: column; padding-top: 20px;">
               
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                  <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                  <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                  <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
+                  <a href="https://www.facebook.com/unsizadez"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""></a>
+                  <a href="https://www.linkedin.com/in/zaur-john-unsizadeh-b77037153/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                  <a href="https://www.instagram.com/unsi_zade/?hl=en"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                  <a href="https://twitter.com/iunsizade"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""></a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".10s">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".10s" style="height: 183px;">
             <div class="fugu--team-left">
               <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team2.jpg" alt="">
+                <img src="assets/images/custom/taleh.png" alt="">
               </div>
               <div class="fugu--team-data">
-                <h4 class="change-font-simple">Esther Howard</h4>
+                <h4 class="change-font-simple">Taleh Dursunzade</h4>
+                <p class="change-font-light">Operational Manager</p>
+              </div>
+            </div>
+            <div style="display: flex;flex-direction: column; padding-top: 20px;">
+              
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""> -->
+                <a href="https://www.linkedin.com/in/taleh-dursunzada/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                <a href="https://www.instagram.com/talehdursunzade/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""> -->
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".20s" style="height: 183px;">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/custom/terry.png" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4 class="change-font-simple">Tariyel Aghazada</h4>
+                <p class="change-font-light"> Adviser</p>
+              </div>
+            </div>
+            <div style="display: flex;flex-direction: column; padding-top: 20px;">
+              
+                <a href="https://www.facebook.com/tariyel.agayev.3"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/tariyelaghazada/?originalSubdomain=az"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                <a href="https://www.instagram.com/tariyelaghazada/?hl=en"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""> -->
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".30s" style="height: 183px;">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/custom/talifa.png" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4 class="change-font-simple">Talifa Isgandarli </h4>
+                <p class="change-font-light">Adviser</p>
+              </div>
+            </div>
+            <div style="display: flex;flex-direction: column; padding-top: 20px;">
+              
+                <a href="https://www.facebook.com/talifa.iskenderli"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/talifa-isgandar-459910192/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                <a href="https://www.instagram.com/tasecrelifat/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""> -->
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".40s" style="height: 183px;">
+            <div class="fugu--team-left">
+              <div class="fugu--team-thumb">
+                <img src="assets/images/custom/elmar.png" alt="">
+              </div>
+              <div class="fugu--team-data">
+                <h4 class="change-font-simple">Elmar Nabiyev</h4>
                 <p class="change-font-light">Art Director</p>
               </div>
             </div>
             <div style="display: flex;flex-direction: column; padding-top: 20px;">
               
-              <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
+              <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""> -->
+                <a href="https://www.linkedin.com/in/nabielmar/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                <a href="https://www.instagram.com/elmarnb/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""> -->
           </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".20s">
+          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".50s" style="height: 183px;">
             <div class="fugu--team-left">
               <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team3.jpg" alt="">
+                <img src="assets/images/custom/baxtiyar.png" alt="">
               </div>
               <div class="fugu--team-data">
-                <h4 class="change-font-simple">Cameron Williamson</h4>
-                <p class="change-font-light">Marketing Officer</p>
+                <h4 class="change-font-simple">Bakhtiyar Hasanov</h4>
+                <p class="change-font-light">Content Manager</p>
               </div>
             </div>
             <div style="display: flex;flex-direction: column; padding-top: 20px;">
               
-              <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".30s">
-            <div class="fugu--team-left">
-              <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team4.jpg" alt="">
-              </div>
-              <div class="fugu--team-data">
-                <h4 class="change-font-simple">Brooklyn Simmons</h4>
-                <p class="change-font-light">Operating Officer</p>
-              </div>
-            </div>
-            <div style="display: flex;flex-direction: column; padding-top: 20px;">
-              
-              <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".40s">
-            <div class="fugu--team-left">
-              <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team5.jpg" alt="">
-              </div>
-              <div class="fugu--team-data">
-                <h4 class="change-font-simple">Leslie Alexander</h4>
-                <p class="change-font-light">Graphic Designer</p>
-              </div>
-            </div>
-            <div style="display: flex;flex-direction: column; padding-top: 20px;">
-              
-              <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="fugu--team-wrap wow fadeInUpX" data-wow-delay=".50s">
-            <div class="fugu--team-left">
-              <div class="fugu--team-thumb">
-                <img src="assets/images/all-img/v3/team6.jpg" alt="">
-              </div>
-              <div class="fugu--team-data">
-                <h4 class="change-font-simple">Guy Hawkins</h4>
-                <p class="change-font-light">UI/UX Designer</p>
-              </div>
-            </div>
-            <div style="display: flex;flex-direction: column; padding-top: 20px;">
-              
-              <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt="">
-                <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt="">
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test.svg" alt=""> -->
+                <a href="https://www.linkedin.com/in/bakhtiyarhasanov/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test1.svg" alt=""></a>
+                <a href="https://www.instagram.com/bakhtiyarhasanov/"><img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test2.svg" alt=""></a>
+                <!-- <img style="width: 15px; margin-right: 15px; margin-bottom: 10px;" src="./assets/images/custom/test3.svg" alt=""> -->
           </div>
           </div>
         </div>
